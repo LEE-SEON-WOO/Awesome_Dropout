@@ -1,0 +1,420 @@
+[
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "nn",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "autograd",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "nn",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "nn",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "nn",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "nn",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "nn",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "nn",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "torch,",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.",
+        "description": "torch.",
+        "detail": "torch.",
+        "documentation": {}
+    },
+    {
+        "label": "torchvision.transforms.functional",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torchvision.transforms.functional",
+        "description": "torchvision.transforms.functional",
+        "detail": "torchvision.transforms.functional",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageOps",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn.functional",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn.functional",
+        "description": "torch.nn.functional",
+        "detail": "torch.nn.functional",
+        "documentation": {}
+    },
+    {
+        "label": "Dropout",
+        "importPath": "torch.nn.modules.dropout",
+        "description": "torch.nn.modules.dropout",
+        "isExtraImport": true,
+        "detail": "torch.nn.modules.dropout",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "version",
+        "importPath": "packaging",
+        "description": "packaging",
+        "isExtraImport": true,
+        "detail": "packaging",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Variable",
+        "importPath": "torch.autograd",
+        "description": "torch.autograd",
+        "isExtraImport": true,
+        "detail": "torch.autograd",
+        "documentation": {}
+    },
+    {
+        "label": "AlphaDropout",
+        "kind": 6,
+        "importPath": "alpha_dropout",
+        "description": "alpha_dropout",
+        "peekOfCode": "class AlphaDropout(nn.Module):\n    # Custom implementation of alpha dropout. Note that an equivalent\n    # implementation exists in pytorch as nn.AlphaDropout\n    def __init__(self, dropout=0.1, lambd=1.0507, alpha=1.67326):\n        super().__init__()\n        self.lambd = lambd\n        self.alpha = alpha\n        self.aprime = -lambd * alpha\n        self.q = 1 - dropout\n        self.p = dropout",
+        "detail": "alpha_dropout",
+        "documentation": {}
+    },
+    {
+        "label": "ConcreteDropout",
+        "kind": 6,
+        "importPath": "concrete_dropout",
+        "description": "concrete_dropout",
+        "peekOfCode": "class ConcreteDropout(nn.Module):\n    def __init__(self, p_logit=-2.0, temp=0.01, eps=1e-8):\n        super(ConcreteDropout, self).__init__()\n        self.p_logit = nn.Parameter(torch.Tensor([p_logit]))\n        self.temp = temp\n        self.eps = eps\n    @property\n    def p(self):\n        return torch.sigmoid(self.p_logit)\n    def forward(self, x):",
+        "detail": "concrete_dropout",
+        "documentation": {}
+    },
+    {
+        "label": "Cutout",
+        "kind": 6,
+        "importPath": "cutout",
+        "description": "cutout",
+        "peekOfCode": "class Cutout(torch.nn.Module):\n    \"\"\"\n    Apply cutout to the image.\n    This operation applies a (2*pad_size, 2*pad_size) mask of zeros to a random location within image.\n    The pixel values filled in will be of the value replace.\n    \"\"\"\n    def __init__(self, p, pad_size, replace=128):\n        super().__init__()\n        self.p = p\n        self.pad_size = int(pad_size)",
+        "detail": "cutout",
+        "documentation": {}
+    },
+    {
+        "label": "cutout",
+        "kind": 2,
+        "importPath": "cutout",
+        "description": "cutout",
+        "peekOfCode": "def cutout(img, pad_size, replace):\n    img = F.pil_to_tensor(img)\n    _, h, w = img.shape\n    center_h, center_w = torch.randint(high=h, size=(1,)), torch.randint(high=w, size=(1,))\n    low_h, high_h = torch.clamp(center_h-pad_size, 0, h).item(), torch.clamp(center_h+pad_size, 0, h).item()\n    low_w, high_w = torch.clamp(center_w-pad_size, 0, w).item(), torch.clamp(center_w+pad_size, 0, w).item()\n    cutout_img = img.clone()\n    cutout_img[:, low_h:high_h, low_w:high_w] = replace\n    return F.to_pil_image(cutout_img)\nclass Cutout(torch.nn.Module):",
+        "detail": "cutout",
+        "documentation": {}
+    },
+    {
+        "label": "SamePadConv2d",
+        "kind": 6,
+        "importPath": "dropconnect",
+        "description": "dropconnect",
+        "peekOfCode": "class SamePadConv2d(nn.Conv2d):\n    \"\"\"\n    Conv with TF padding='same'\n    https://github.com/pytorch/pytorch/issues/3867#issuecomment-349279036\n    \"\"\"\n    def __init__(self, in_channels, out_channels, kernel_size, stride=1, dilation=1, groups=1, bias=True, padding_mode=\"zeros\"):\n        super().__init__(in_channels, out_channels, kernel_size, stride, 0, dilation, groups, bias, padding_mode)\n    def get_pad_odd(self, in_, weight, stride, dilation):\n        effective_filter_size_rows = (weight - 1) * dilation + 1\n        out_rows = (in_ + stride - 1) // stride",
+        "detail": "dropconnect",
+        "documentation": {}
+    },
+    {
+        "label": "Swish",
+        "kind": 6,
+        "importPath": "dropconnect",
+        "description": "dropconnect",
+        "peekOfCode": "class Swish(nn.Module):\n    def forward(self, x):\n        return x * torch.sigmoid(x)\nclass Flatten(nn.Module):\n    def forward(self, x):\n        return x.view(x.shape[0], -1)\nclass SEModule(nn.Module):\n    def __init__(self, in_, squeeze_ch):\n        super().__init__()\n        self.se = nn.Sequential(",
+        "detail": "dropconnect",
+        "documentation": {}
+    },
+    {
+        "label": "Flatten",
+        "kind": 6,
+        "importPath": "dropconnect",
+        "description": "dropconnect",
+        "peekOfCode": "class Flatten(nn.Module):\n    def forward(self, x):\n        return x.view(x.shape[0], -1)\nclass SEModule(nn.Module):\n    def __init__(self, in_, squeeze_ch):\n        super().__init__()\n        self.se = nn.Sequential(\n            nn.AdaptiveAvgPool2d(1),\n            nn.Conv2d(in_, squeeze_ch, kernel_size=1, stride=1, padding=0, bias=True),\n            Swish(),",
+        "detail": "dropconnect",
+        "documentation": {}
+    },
+    {
+        "label": "SEModule",
+        "kind": 6,
+        "importPath": "dropconnect",
+        "description": "dropconnect",
+        "peekOfCode": "class SEModule(nn.Module):\n    def __init__(self, in_, squeeze_ch):\n        super().__init__()\n        self.se = nn.Sequential(\n            nn.AdaptiveAvgPool2d(1),\n            nn.Conv2d(in_, squeeze_ch, kernel_size=1, stride=1, padding=0, bias=True),\n            Swish(),\n            nn.Conv2d(squeeze_ch, in_, kernel_size=1, stride=1, padding=0, bias=True),\n        )\n    def forward(self, x):",
+        "detail": "dropconnect",
+        "documentation": {}
+    },
+    {
+        "label": "DropConnect2",
+        "kind": 6,
+        "importPath": "dropconnect",
+        "description": "dropconnect",
+        "peekOfCode": "class DropConnect2(nn.Module):\n    def __init__(self, ratio):\n        super().__init__()\n        self.ratio = 1.0 - ratio\n    def forward(self, x):\n        if not self.training:\n            return x\n        random_tensor = self.ratio\n        random_tensor += torch.rand([x.shape[0], 1, 1, 1], dtype=torch.float, device=x.device)\n        random_tensor.requires_grad_(False)",
+        "detail": "dropconnect",
+        "documentation": {}
+    },
+    {
+        "label": "DropConnect",
+        "kind": 6,
+        "importPath": "dropconnect",
+        "description": "dropconnect",
+        "peekOfCode": "class DropConnect(nn.Module):\n    '''\n    https://discuss.pytorch.org/t/dropconnect-implementation/70921\n    '''\n    def __init__(self, module: nn.Module, p: float = 0.1, inplace = True):\n        super().__init__()\n        self.module = module\n        self.p = p\n        self.inplace = inplace\n    def forward(self, x: torch.Tensor) -> torch.Tensor:",
+        "detail": "dropconnect",
+        "documentation": {}
+    },
+    {
+        "label": "conv_bn_act",
+        "kind": 2,
+        "importPath": "dropconnect",
+        "description": "dropconnect",
+        "peekOfCode": "def conv_bn_act(in_, out_, kernel_size,\n                stride=1, groups=1, bias=True,\n                eps=1e-3, momentum=0.01):\n    return nn.Sequential(\n        SamePadConv2d(in_, out_, kernel_size, stride, groups=groups, bias=bias),\n        nn.BatchNorm2d(out_, eps, momentum),\n        Swish()\n    )\nclass SamePadConv2d(nn.Conv2d):\n    \"\"\"",
+        "detail": "dropconnect",
+        "documentation": {}
+    },
+    {
+        "label": "GaussianDropout",
+        "kind": 6,
+        "importPath": "gaussian_dropout",
+        "description": "gaussian_dropout",
+        "peekOfCode": "class GaussianDropout(nn.Module):\n    def __init__(self, alpha=1.0):\n        super(GaussianDropout, self).__init__()\n        self.alpha = torch.Tensor([alpha])\n    def forward(self, x):\n        \"\"\"\n        Sample noise   e ~ N(1, alpha)\n        Multiply noise h = h_ * e\n        \"\"\"\n        if self.train():",
+        "detail": "gaussian_dropout",
+        "documentation": {}
+    },
+    {
+        "label": "GradBasedDropout",
+        "kind": 6,
+        "importPath": "grad_dropout",
+        "description": "grad_dropout",
+        "peekOfCode": "class GradBasedDropout(nn.Module):\n    \"\"\"\n    Gradient Based Dropout layer.\n    \"\"\"\n    def __init__(self, input_dim, drop_prob):\n        \"\"\"\n        Initializes Grad Based Dropout layer.\n        @param input_dim : Dimenson of keep probability (same as dimenson of layer)\n        @param drop_prob : Dropout rate. Can be None as well when scaling to 0-1 range.\n        \"\"\"",
+        "detail": "grad_dropout",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "grad_dropout",
+        "description": "grad_dropout",
+        "peekOfCode": "device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\nclass GradBasedDropout(nn.Module):\n    \"\"\"\n    Gradient Based Dropout layer.\n    \"\"\"\n    def __init__(self, input_dim, drop_prob):\n        \"\"\"\n        Initializes Grad Based Dropout layer.\n        @param input_dim : Dimenson of keep probability (same as dimenson of layer)\n        @param drop_prob : Dropout rate. Can be None as well when scaling to 0-1 range.",
+        "detail": "grad_dropout",
+        "documentation": {}
+    },
+    {
+        "label": "MaxDropout",
+        "kind": 6,
+        "importPath": "max_dropout",
+        "description": "max_dropout",
+        "peekOfCode": "class MaxDropout(nn.Module):\n    def __init__(self, drop=0.3):\n#         print(p)\n        super(MaxDropout, self).__init__()\n        if drop < 0 or drop > 1:\n            raise ValueError(\"dropout probability has to be between 0 and 1, \"\n                             \"but got {}\".format(p))\n        self.drop = 1 - drop\n    def forward(self, x):\n        if not self.training:",
+        "detail": "max_dropout",
+        "documentation": {}
+    },
+    {
+        "label": "MP",
+        "kind": 6,
+        "importPath": "moment_propagation",
+        "description": "moment_propagation",
+        "peekOfCode": "class MP:\n    def __init__(self, model=None):\n        self._use_mp = True\n        self._nn_model = model\n        self._mp_model = None\n        self._weight_scale = 1.0 # Weight inference scaling factor\n        self.DEBUG = Enum('DEBUG','model layer plot tensor')\n        self._debug = dict({self.DEBUG.model: False,\n                            self.DEBUG.layer: False,\n                            self.DEBUG.plot: False,",
+        "detail": "moment_propagation",
+        "documentation": {}
+    },
+    {
+        "label": "MyCustomLayer",
+        "kind": 2,
+        "importPath": "moment_propagation",
+        "description": "moment_propagation",
+        "peekOfCode": "def MyCustomLayer(self,E,V,L):\n    # E = Expectation\n    # V = Variance\n    # L = Layer\n    logging.info(f'MyCustomLayer {E.shape}')\n    ''' Your Moment Propagation implementation '''\n    return E, V\n```\nI implemented a `debug` function that can be used to debug through the code with real values.\nThat helps a lot if you want to check the output of your function.",
+        "detail": "moment_propagation",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "moment_propagation",
+        "description": "moment_propagation",
+        "peekOfCode": "model = tensorflow functional or sequencial model with dropout\n# Creatint Moment Progagation model\nmodel_mp = mp.MP()\nmodel_mp.create_MP_Model(model=model, use_mp=True, verbose=False)\npred_mp,var_mp=model_mp.model.predict(x=x_test)\n===== Example Usage (DEBUG) =====\nmodel_mp = mp.MP(model=model)\n# Debug entire model\npred_mp, var_mp = model_mp.debug_model(batch_size=1, debug_input_tensor=x_test, use_mp=True)\n# Example for debugging a layer",
+        "detail": "moment_propagation",
+        "documentation": {}
+    },
+    {
+        "label": "model_mp",
+        "kind": 5,
+        "importPath": "moment_propagation",
+        "description": "moment_propagation",
+        "peekOfCode": "model_mp = mp.MP()\nmodel_mp.create_MP_Model(model=model, use_mp=True, verbose=False)\npred_mp,var_mp=model_mp.model.predict(x=x_test)\n===== Example Usage (DEBUG) =====\nmodel_mp = mp.MP(model=model)\n# Debug entire model\npred_mp, var_mp = model_mp.debug_model(batch_size=1, debug_input_tensor=x_test, use_mp=True)\n# Example for debugging a layer\nE,V,E_dbg,V_dbg = model_mp.debug_layer(6)\n# Example for creting a layer evaluation generator",
+        "detail": "moment_propagation",
+        "documentation": {}
+    },
+    {
+        "label": "model_mp",
+        "kind": 5,
+        "importPath": "moment_propagation",
+        "description": "moment_propagation",
+        "peekOfCode": "model_mp = mp.MP(model=model)\n# Debug entire model\npred_mp, var_mp = model_mp.debug_model(batch_size=1, debug_input_tensor=x_test, use_mp=True)\n# Example for debugging a layer\nE,V,E_dbg,V_dbg = model_mp.debug_layer(6)\n# Example for creting a layer evaluation generator\nfor l in model_mp.get_layer_evaluation_generator(X_random):\n    name = l['layer_name']\n    layer = l['layer']\n    inp = l['inputs']",
+        "detail": "moment_propagation",
+        "documentation": {}
+    },
+    {
+        "label": "E,V,E_dbg,V_dbg",
+        "kind": 5,
+        "importPath": "moment_propagation",
+        "description": "moment_propagation",
+        "peekOfCode": "E,V,E_dbg,V_dbg = model_mp.debug_layer(6)\n# Example for creting a layer evaluation generator\nfor l in model_mp.get_layer_evaluation_generator(X_random):\n    name = l['layer_name']\n    layer = l['layer']\n    inp = l['inputs']\n    out_b_a = l['output_b_a']\n    out = l['outputs']\n    plt.figure(figsize=(15,5))\n    plt.hist(inp)",
+        "detail": "moment_propagation",
+        "documentation": {}
+    },
+    {
+        "label": "RNNDrop",
+        "kind": 6,
+        "importPath": "rnn_drop",
+        "description": "rnn_drop",
+        "peekOfCode": "class RNNDrop(nn.Module):\n    \"\"\"\n    RNNDrop implemnetation. \n    \"\"\"\n    def __init__(self, drop_prob):\n        \"\"\"\n        Initializae dropout layer with a droput rate.\n        @param drop_prob : Float value which marks the probability of dropping\n                           each neuron.\n        \"\"\"",
+        "detail": "rnn_drop",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "rnn_drop",
+        "description": "rnn_drop",
+        "peekOfCode": "device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\nclass RNNDrop(nn.Module):\n    \"\"\"\n    RNNDrop implemnetation. \n    \"\"\"\n    def __init__(self, drop_prob):\n        \"\"\"\n        Initializae dropout layer with a droput rate.\n        @param drop_prob : Float value which marks the probability of dropping\n                           each neuron.",
+        "detail": "rnn_drop",
+        "documentation": {}
+    },
+    {
+        "label": "Standout",
+        "kind": 6,
+        "importPath": "standout",
+        "description": "standout",
+        "peekOfCode": "class Standout(nn.Module):\n    \"\"\"\n    Standout Layer:\n    We define the Standout Layer here (as per Algorithm 2 in the original paper).\n    It inherits from nn.Module class of PyTorch. The Standout Layer can easily \n    be converted to a standard Dropout layer by setting paramaeter alpha=0 and beta=0.5 for a Dropout rate of 0.5.\n    \"\"\"\n    def __init__(self, last_layer:nn.Module, alpha:float, beta:float):\n        super(Standout, self).__init__()\n        self.pi = last_layer.weight",
+        "detail": "standout",
+        "documentation": {}
+    },
+    {
+        "label": "sample_mask",
+        "kind": 2,
+        "importPath": "standout",
+        "description": "standout",
+        "peekOfCode": "def sample_mask(p):\n    \"\"\"Given a matrix of probabilities, this will sample a mask in PyTorch.\n    Sampling Operation:\n    Now we perform the sampling operation for the dropout. We pass a Tensor of Retention Probabilities \n    i.e the probability with which a node will be retained, and the function returns a Tensor of the same size as Retenetion Probabilities \n    which we call the Mask. The Mask Tensor contains 0 and 1 values where 1 indicates a node is retained and 0 indicates a node is dropped.\n    \"\"\"\n    #Random Sampling\n    if torch.cuda.is_available():\n        uniform = Variable(torch.Tensor(p.size()).uniform_(0, 1).cuda())",
+        "detail": "standout",
+        "documentation": {}
+    },
+    {
+        "label": "VariationalDropout",
+        "kind": 6,
+        "importPath": "var_dropout",
+        "description": "var_dropout",
+        "peekOfCode": "class VariationalDropout(nn.Module):\n    def __init__(self, log_alpha=-3.):\n        super(VariationalDropout, self).__init__()\n        self.max_log_alpha = 0.0\n        self.log_alpha = nn.Parameter(torch.Tensor([log_alpha]))\n    @property\n    def alpha(self):\n        return torch.exp(self.log_alpha)\n    def forward(self, x):\n        \"\"\"",
+        "detail": "var_dropout",
+        "documentation": {}
+    }
+]
